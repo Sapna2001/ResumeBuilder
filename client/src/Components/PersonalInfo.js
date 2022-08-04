@@ -1,5 +1,6 @@
 import { Form, Input } from "antd";
 import React from "react";
+import "../Resources/Stylesheets/profile.css"
 
 const { TextArea } = Input;
 
@@ -7,7 +8,7 @@ function PersonalInfo() {
   return (
     <div>
       <div className="row">
-        <div className="col-md-4">
+        <div className="col-md-4 details">
           <Form.Item
             name="firstName"
             label="First Name"

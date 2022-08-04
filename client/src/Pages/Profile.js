@@ -4,12 +4,14 @@ import { Button, Form, message, Spin, Tabs } from "antd";
 import PersonalInfo from "../Components/PersonalInfo";
 import SkillsEducation from "../Components/SkillsEducation";
 import ExperienceProjects from "../Components/ExperienceProjects";
+import "../Resources/Stylesheets/profile.css"
 import axios from "axios";
 
 const { TabPane } = Tabs;
+
 function Profile() {
   const [loading, setLoading] = useState(false);
-  const user = JSON.parse(localStorage.getItem("sheyresume-user"));
+  const user = JSON.parse(localStorage.getItem("resume-user"));
   const onFinish = async (values) => {
     setLoading(true);
     try {
@@ -17,7 +19,7 @@ function Profile() {
         ...values,
         _id: user._id,
       });
-      localStorage.setItem("sheyresume-user", JSON.stringify(result.data));
+      localStorage.setItem("resume-user", JSON.stringify(result.data));
       setLoading(false);
       message.success("Profile updated successfully");
     } catch (error) {
@@ -28,7 +30,7 @@ function Profile() {
   return (
     <DefaultLayout>
       {loading && <Spin size="large" />}
-      <div className="update-profile">
+      <div className="updateProfile">
         <h4><b>Update Profile</b></h4>
         <hr />
         <Form layout="vertical" onFinish={onFinish} initialValues={user}>
@@ -44,7 +46,7 @@ function Profile() {
             </TabPane>
           </Tabs>
 
-          <Button htmlType="submit">UPDATE</Button>
+          <Button className="updateButton" htmlType="submit">UPDATE</Button>
         </Form>
       </div>
     </DefaultLayout>

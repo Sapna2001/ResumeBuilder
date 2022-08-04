@@ -86,19 +86,7 @@ function SkillsEducation() {
                   >
                     <Input placeholder="Technology" />
                   </Form.Item>
-                  </div>
-
-                  <div className="col-md-4">
-                  <Form.Item
-                    {...restField}
-                    name={[name, "rating"]}
-                    rules={[{ required: true, message: "Missing first name" }]}
-                  >
-                    <Input placeholder="Rating" />
-                  </Form.Item>
-                  </div>
-
-                 
+                  </div>               
                   <div className="col-md-2">
                   <MinusCircleOutlined style={{fontSize:25 , color:'tomato'}} onClick={() => remove(name)} />
                   </div>

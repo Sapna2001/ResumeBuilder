@@ -4,6 +4,7 @@ import templateimg from "../Resources/templates/template1.png";
 import template2img from "../Resources/templates/template2.png";
 import "../Resources/Stylesheets/templates.css";
 import { useNavigate } from "react-router-dom";
+
 function Home() {
   const navigate = useNavigate();
   const templates = [

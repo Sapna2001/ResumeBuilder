@@ -13,7 +13,7 @@ function Register() {
     try {
       const user = await axios.post("api/user/login", values);
       message.success("Login successfull");
-      localStorage.setItem("sapnaResume-user", JSON.stringify(user.data));
+      localStorage.setItem("resume-user", JSON.stringify(user.data));
       setLoading(false);
       navigate("/home");
     } catch (error) {
@@ -23,7 +23,7 @@ function Register() {
   };
 
   useEffect(() => {
-    if (localStorage.getItem("sapnaResume-user")) {
+    if (localStorage.getItem("resume-user")) {
       navigate("/home");
     }
   });
