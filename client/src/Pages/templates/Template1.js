@@ -3,7 +3,7 @@ import "../../Resources/Stylesheets/templates.css";
 function Template1() {
   const user = JSON.parse(localStorage.getItem("resume-user"));
   return (
-    <div className="template1-parent">
+    <div className="templateParent">
       <div className="top d-flex justify-content-between">
         <h1>
           {user.firstName.toUpperCase()} {user.lastName.toUpperCase()}
@@ -15,13 +15,6 @@ function Template1() {
         </div>
       </div>
 
-      <div className="divider mt-3"></div>
-
-      <div className="objective mt-3">
-        <h3>Objective</h3>
-        <hr />
-        <p>{user.carrierObjective}</p>
-      </div>
       <div className="divider mt-3"></div>
 
       <div className="education mt-3">
@@ -74,7 +67,7 @@ function Template1() {
                   {project.title} [{project.range}]{" "}
                 </b>
               </h6>
-              <p>{project.rating}</p>
+              <div>{project.description}</div>
             </div>
           );
         })}
@@ -82,11 +75,28 @@ function Template1() {
 
       <div className="divider mt-3"></div>
 
-      <div className="projects mt-3">
+      <div className="skills mt-3">
         <h3>Skills</h3>
         <hr />
         {user.skills.map((skill) => {
           return <p>{skill.technology}</p>;
+        })}
+      </div>
+
+      <div className="achievements mt-3">
+        <h3>Achievements</h3>
+        <hr />
+        {user.achievements.map((achievement) => {
+          return (
+            <div className="d-flex flex-column">
+              <h6>
+                <b>
+                  {achievement.title} [{achievement.range}]{" "}
+                </b>
+              </h6>
+              <div>{achievement.description}</div>
+            </div>
+          );
         })}
       </div>
     </div>

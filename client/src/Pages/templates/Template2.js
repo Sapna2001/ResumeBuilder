@@ -3,7 +3,7 @@ import "../../Resources/Stylesheets/templates.css";
 function Template2() {
   const user = JSON.parse(localStorage.getItem("resume-user"));
   return (
-    <div className="template1-parent">
+    <div className="templateParent">
       <div className="top d-flex flex-column">
         <h1>
           {user.firstName.toUpperCase()} {user.lastName.toUpperCase()}
@@ -16,16 +16,9 @@ function Template2() {
       </div>
 
       <div className="divider mt-3"></div>
-      <div className="divider mt-1"></div>
-      <div className="objective mt-3">
-        <h3 style={{backgroundColor:'gray' , padding:10}}>Objective</h3>
-        <hr />
-        <p>{user.carrierObjective}</p>
-      </div>
-      <div className="divider mt-3"></div>
 
       <div className="education mt-3">
-        <h3 style={{backgroundColor:'gray' , padding:10}}>Education</h3>
+        <h3 className="highlightedHeading">Education</h3>
         <hr />
         {user.education.map((education) => {
           return (
@@ -45,7 +38,7 @@ function Template2() {
       <div className="divider mt-3"></div>
 
       <div className="experience mt-3">
-        <h3 style={{backgroundColor:'gray' , padding:10}}>Experience</h3>
+        <h3 className="highlightedHeading">Experience</h3>
         <hr />
         {user.experience.map((exp) => {
           return (
@@ -64,7 +57,7 @@ function Template2() {
       <div className="divider mt-3"></div>
 
       <div className="projects mt-3">
-        <h3 style={{backgroundColor:'gray' , padding:10}}>Projects</h3>
+        <h3 className="highlightedHeading">Projects</h3>
         <hr />
         {user.projects.map((project) => {
           return (
@@ -74,7 +67,7 @@ function Template2() {
                   {project.title} [{project.range}]{" "}
                 </b>
               </h6>
-              <p>{project.rating}</p>
+              <div>{project.description}</div>
             </div>
           );
         })}
@@ -83,10 +76,27 @@ function Template2() {
       <div className="divider mt-3"></div>
 
       <div className="projects mt-3">
-        <h3 style={{backgroundColor:'gray' , padding:10}}>Skills</h3>
+        <h3 className="highlightedHeading">Skills</h3>
         <hr />
         {user.skills.map((skill) => {
           return <p>{skill.technology}</p>;
+        })}
+      </div>
+
+      <div className="achievements mt-3">
+        <h3>Achievements</h3>
+        <hr />
+        {user.achievements.map((achievement) => {
+          return (
+            <div className="d-flex flex-column">
+              <h6>
+                <b>
+                  {achievement.title} [{achievement.range}]{" "}
+                </b>
+              </h6>
+              <div>{achievement.description}</div>
+            </div>
+          );
         })}
       </div>
     </div>

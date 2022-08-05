@@ -3,8 +3,8 @@ import DefaultLayout from "../Components/DefaultLayout";
 import { Button, Form, message, Spin, Tabs } from "antd";
 import PersonalInfo from "../Components/PersonalInfo";
 import SkillsEducation from "../Components/SkillsEducation";
-import ExperienceProjects from "../Components/ExperienceProjects";
-import "../Resources/Stylesheets/profile.css"
+import ExperienceProjectsAchievements from "../Components/ExperienceProjectsAchievements";
+import "../Resources/Stylesheets/profile.css";
 import axios from "axios";
 
 const { TabPane } = Tabs;
@@ -31,7 +31,9 @@ function Profile() {
     <DefaultLayout>
       {loading && <Spin size="large" />}
       <div className="updateProfile">
-        <h4><b>Update Profile</b></h4>
+        <h4>
+          <b>Update Profile</b>
+        </h4>
         <hr />
         <Form layout="vertical" onFinish={onFinish} initialValues={user}>
           <Tabs defaultActiveKey="1">
@@ -41,12 +43,14 @@ function Profile() {
             <TabPane tab="Skills and Education" key="2">
               <SkillsEducation />
             </TabPane>
-            <TabPane tab="Experience / Projects" key="3">
-              <ExperienceProjects />
+            <TabPane tab="Experience / Projects / Achievements" key="3">
+              <ExperienceProjectsAchievements />
             </TabPane>
           </Tabs>
 
-          <Button className="updateButton" htmlType="submit">UPDATE</Button>
+          <Button className="updateButton" htmlType="submit">
+            UPDATE
+          </Button>
         </Form>
       </div>
     </DefaultLayout>
