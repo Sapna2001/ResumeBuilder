@@ -12,7 +12,7 @@ function PersonalInfo() {
           <Form.Item
             name="firstName"
             label="First Name"
-            rules={[{ required: true }]}
+            rules={[{ required: true, message: "Missing first name" }]}
           >
             <Input />
           </Form.Item>
@@ -21,13 +21,13 @@ function PersonalInfo() {
           <Form.Item
             name="lastName"
             label="Last Name"
-            rules={[{ required: true }]}
+            rules={[{ required: true, message: "Missing last name" }]}
           >
             <Input />
           </Form.Item>
         </div>
         <div className="col-md-4">
-          <Form.Item name="email" label="Email" rules={[{ required: true }]}>
+          <Form.Item name="email" label="Email" rules={[{ required: true, message: "Missing email" }]}>
             <Input />
           </Form.Item>
         </div>
@@ -35,7 +35,7 @@ function PersonalInfo() {
           <Form.Item
             name="mobileNumber"
             label="Mobile Number"
-            rules={[{ required: true }]}
+            rules={[{ required: true, message: "Missing mobile number" }]}
           >
             <Input />
           </Form.Item>
@@ -44,14 +44,14 @@ function PersonalInfo() {
           <Form.Item
             name="linkedIn"
             label="LinkedIn"
-            rules={[{ required: true }]}
+            rules={[{ required: true, message: "Missing LinkedIn url" }]}
           >
             <Input />
           </Form.Item>
         </div>
 
         <div className="col-md-4">
-          <Form.Item name="github" label="GitHub" rules={[{ required: true }]}>
+          <Form.Item name="github" label="GitHub" rules={[{ required: true, message: "Missing GitHub url"  }]}>
             <Input />
           </Form.Item>
         </div>
@@ -60,7 +60,7 @@ function PersonalInfo() {
           <Form.Item
             name="portfolio"
             label="Portfolio"
-            rules={[{ required: true }]}
+            rules={[{ required: true, message: "Missing Portfolio url"  }]}
           >
             <Input />
           </Form.Item>
@@ -70,7 +70,7 @@ function PersonalInfo() {
           <Form.Item
             name="address"
             label="Address"
-            rules={[{ required: true }]}
+            rules={[{ required: true, message: "Missing address"  }]}
           >
             <TextArea />
           </Form.Item>

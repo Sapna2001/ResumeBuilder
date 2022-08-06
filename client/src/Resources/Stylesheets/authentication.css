@@ -1,4 +1,4 @@
-.authentication-parent {
+.authenticationParent {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -19,12 +19,12 @@
   width: 100%;
 }
 
-.authentication-parent h1 {
+.authenticationParent h1 {
   font-size: 22px;
   font-weight: bold;
 }
 
-.authentication-parent form {
+.authenticationParent form {
   width: 400px;
   box-shadow: 0 0 3px gray;
   padding: 20px;

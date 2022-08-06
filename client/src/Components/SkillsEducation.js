@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Input, Button, Space } from "antd";
+import { Form, Input, Button} from "antd";
 import { MinusCircleOutlined, PlusOutlined } from "@ant-design/icons";
 function SkillsEducation() {
   return (
@@ -19,7 +19,7 @@ function SkillsEducation() {
                       {...restField}
                       name={[name, "qualification"]}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: "Missing qualification" },
                       ]}
                     >
                       <Input placeholder="Qualification" />
@@ -31,7 +31,7 @@ function SkillsEducation() {
                       {...restField}
                       name={[name, "percentage"]}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: "Missing percentage" },
                       ]}
                     >
                       <Input placeholder="Percentage" />
@@ -43,7 +43,7 @@ function SkillsEducation() {
                       {...restField}
                       name={[name, "institution"]}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: "Missing institution name" },
                       ]}
                     >
                       <Input placeholder="Institution" />
@@ -55,7 +55,7 @@ function SkillsEducation() {
                       {...restField}
                       name={[name, "yearRange"]}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: "Missing year range" },
                       ]}
                     >
                       <Input placeholder="Year Range" />
@@ -99,7 +99,7 @@ function SkillsEducation() {
                       {...restField}
                       name={[name, "technology"]}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: "Missing technology" },
                       ]}
                     >
                       <Input placeholder="Technology" />

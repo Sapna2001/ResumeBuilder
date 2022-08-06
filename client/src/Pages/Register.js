@@ -30,7 +30,7 @@ function Register() {
 
   return (
     <>
-      <div className="authentication-parent">
+      <div className="authenticationParent">
         <h1 className="brand">Resume Builder</h1>
         {loading && <Spin size="large" />}
         <Form layout="vertical" onFinish={onFinish}>

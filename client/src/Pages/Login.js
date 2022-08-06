@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Form, Input, Button, Checkbox, message, Spin } from "antd";
+import { Form, Input, Button,  message, Spin } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import "../Resources/Stylesheets/authentication.css";
 import Footer from "../Components/Footer";
@@ -30,7 +30,7 @@ function Register() {
 
   return (
     <>
-      <div className="authentication-parent">
+      <div className="authenticationParent">
         {loading && <Spin size="large" />}
         <h1 className="brand">Resume Builder</h1>
         <Form layout="vertical" onFinish={onFinish}>

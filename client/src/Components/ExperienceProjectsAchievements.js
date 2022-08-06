@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Input, Button, Space } from "antd";
+import { Form, Input, Button } from "antd";
 import { MinusCircleOutlined, PlusOutlined } from "@ant-design/icons";
 const { TextArea } = Input;
 function ExperienceProjects() {
@@ -20,7 +20,7 @@ function ExperienceProjects() {
                       {...restField}
                       name={[name, "company"]}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: "Missing company name" },
                       ]}
                     >
                       <Input placeholder="Company" />
@@ -32,7 +32,7 @@ function ExperienceProjects() {
                       {...restField}
                       name={[name, "position"]}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: "Missing position" },
                       ]}
                     >
                       <TextArea placeholder="Position" />
@@ -44,7 +44,7 @@ function ExperienceProjects() {
                       {...restField}
                       name={[name, "description"]}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: "Missing description" },
                       ]}
                     >
                       <TextArea placeholder="Description" />
@@ -56,7 +56,7 @@ function ExperienceProjects() {
                       {...restField}
                       name={[name, "place"]}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: "Missing place name" },
                       ]}
                     >
                       <Input placeholder="Place" />
@@ -67,7 +67,7 @@ function ExperienceProjects() {
                       {...restField}
                       name={[name, "yearRange"]}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: "Missing year range" },
                       ]}
                     >
                       <Input placeholder="Year Range" />
@@ -112,7 +112,7 @@ function ExperienceProjects() {
                       {...restField}
                       name={[name, "title"]}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: "Missing title" },
                       ]}
                     >
                       <Input placeholder="Title" />
@@ -124,7 +124,7 @@ function ExperienceProjects() {
                       {...restField}
                       name={[name, "link"]}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: "Missing project link" },
                       ]}
                     >
                       <Input placeholder="Project Link" />
@@ -136,7 +136,7 @@ function ExperienceProjects() {
                       {...restField}
                       name={[name, "description"]}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: "Missing description" },
                       ]}
                     >
                       <TextArea placeholder="Description" />
@@ -147,7 +147,7 @@ function ExperienceProjects() {
                       {...restField}
                       name={[name, "yearRange"]}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: "Missing year range" },
                       ]}
                     >
                       <Input placeholder="Year Range" />
@@ -193,7 +193,7 @@ function ExperienceProjects() {
                       {...restField}
                       name={[name, "title"]}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: "Missing title" },
                       ]}
                     >
                       <Input placeholder="Title" />
@@ -205,7 +205,7 @@ function ExperienceProjects() {
                       {...restField}
                       name={[name, "description"]}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: "Missing description" },
                       ]}
                     >
                       <TextArea placeholder="Description" />
@@ -217,7 +217,7 @@ function ExperienceProjects() {
                       {...restField}
                       name={[name, "yearRange"]}
                       rules={[
-                        { required: true, message: "Missing first name" },
+                        { required: true, message: "Missing year range" },
                       ]}
                     >
                       <Input placeholder="Year Range" />

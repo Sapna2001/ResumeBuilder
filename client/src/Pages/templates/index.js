@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
-import { Navigate, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import DefaultLayout from "../../Components/DefaultLayout";
 import Template1 from "./Template1";
 import Template2 from "./Template2";
@@ -25,6 +25,9 @@ function Templates() {
       }
       case "3": {
         return <Template3 />;
+      }
+      default: {
+        return <Template1 />;
       }
     }
   };
