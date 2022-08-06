@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const dbConnect = require("./dbConnect")
+const dbConnect = require("./dbConnect");
 
 app.use(express.json());
 
@@ -18,5 +18,9 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-app.get("/", (request, response) => response.send("Welcome to Resume Builder!"));
-app.listen(port, () => console.log(`Resume builder app listening on port ${port}!`));
+app.get("/", (request, response) =>
+  response.send("Welcome to Resume Builder!")
+);
+app.listen(port, () =>
+  console.log(`Resume builder app listening on port ${port}!`)
+);
