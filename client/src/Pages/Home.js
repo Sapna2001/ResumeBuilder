@@ -19,7 +19,7 @@ function Home() {
       image: template2Img,
     },
     {
-      title: "Semi Highlighted Sections Resume",
+      title: "Semi-Highlighted Sections Resume",
       image: template3Img,
     },
   ];
