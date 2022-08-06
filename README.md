@@ -6,7 +6,25 @@ Employers use resumes to make recruiting choices, and it can also help us secure
 Resume builder is a application used to create ATS(Applicant Tracking System) friendly resumes. This app helps to create resumes which has all the relevant information needed to get hired.
 
 # Tech Stacks 
-- MERN Stack
+- Frontend : React
+- Backend : NodeJS and Express
+- Database : MongoDB
+
+# How to use?
+- Register
+<img width="350px" height="400px" src="">
+
+- Login
+<img width="350px" height="400px" src="">
+
+- Add details to the profile.
+<img width="350px" height="400px" src="">
+
+- Select the desired template from the home page.
+<img width="350px" height="400px" src="">
+
+- Print the resume
+<img width="350px" height="400px" src="">
 
 # Template
 The resume builder currently provides 3 templates.
