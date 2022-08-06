@@ -12,7 +12,10 @@ Resume builder is a application used to create ATS(Applicant Tracking System) fr
 The resume builder currently provides 3 templates.
 
 1. Simple Resume
+<img width="350px" height="400px" src="https://github.com/Sapna2001/ResumeBuilder/blob/main/client/src/Resources/templates/template1.png">
 
 2. Highlighted Sections Resume
+<img width="350px" height="400px" src="https://github.com/Sapna2001/ResumeBuilder/blob/main/client/src/Resources/templates/template2.png">
 
 3. Semi-Highlighted Sections Resume
+<img width="350px" height="400px" src="https://github.com/Sapna2001/ResumeBuilder/blob/main/client/src/Resources/templates/template3.png">
