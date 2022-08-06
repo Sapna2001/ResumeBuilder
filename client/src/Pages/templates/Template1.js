@@ -13,9 +13,15 @@ function Template1() {
         <div className="top d-flex flex-row justify-content-around">
           <p>{user.email}</p>
           <p>{user.mobileNumber}</p>
-          <a href={user.linkedIn}><p>LinkedIn</p></a>
-          <a href={user.github}><p>Github</p></a>
-          <a href={user.portfolio}><p>Portfolio</p></a>
+          <a href={user.linkedIn}>
+            <p>LinkedIn</p>
+          </a>
+          <a href={user.github}>
+            <p>Github</p>
+          </a>
+          <a href={user.portfolio}>
+            <p>Portfolio</p>
+          </a>
         </div>
       </div>
 
@@ -23,7 +29,7 @@ function Template1() {
 
       <div className="education mt-3">
         <h3>Education</h3>
-        
+
         {user.education.map((education) => {
           console.log(education);
           return (
@@ -44,13 +50,15 @@ function Template1() {
 
       <div className="experience mt-3">
         <h3>Experience</h3>
-        
+
         {user.experience.map((experience) => {
           return (
             <div className="d-flex flex-column mt-2">
               <h6>
                 <b className="top d-flex flex-row justify-content-between">
-                  <p>{experience.company} ({experience.place})</p>
+                  <p>
+                    {experience.company} ({experience.place})
+                  </p>
                   <p>{experience.yearRange}</p>
                 </b>
               </h6>
@@ -70,7 +78,9 @@ function Template1() {
             <div className="d-flex flex-column mt-3">
               <h6>
                 <b className="top d-flex flex-row justify-content-between">
-                <a href={project.link}><p>{project.title}</p></a>
+                  <a href={project.link}>
+                    <p>{project.title}</p>
+                  </a>
                   <p>{project.yearRange}</p>
                 </b>
               </h6>
@@ -85,9 +95,9 @@ function Template1() {
       <div className="skills mt-3">
         <h3>Skills</h3>
         <div className="top d-flex flex-row justify-content-between">
-        {user.skills.map((skill) => {
-          return <p>{skill.technology}</p>;
-        })}
+          {user.skills.map((skill) => {
+            return <p>{skill.technology}</p>;
+          })}
         </div>
       </div>
 
@@ -95,7 +105,7 @@ function Template1() {
 
       <div className="achievements mt-3">
         <h3>Achievements</h3>
-        
+
         {user.achievements.map((achievement) => {
           return (
             <div className="d-flex flex-column mt-3">

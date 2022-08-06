@@ -14,7 +14,7 @@ function Templates() {
     content: () => componentRef.current,
   });
   const params = useParams();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const gettemplate = () => {
     switch (params.id) {
       case "1": {
@@ -31,8 +31,12 @@ function Templates() {
   return (
     <DefaultLayout>
       <div className="d-flex justify-content-end my-5 mx-5">
-        <Button className="backButton" onClick={()=>navigate('/home')}>Back</Button>
-        <Button className="mx-5 printButton" onClick={handlePrint}>Print</Button>
+        <Button className="backButton" onClick={() => navigate("/home")}>
+          Back
+        </Button>
+        <Button className="mx-5 printButton" onClick={handlePrint}>
+          Print
+        </Button>
       </div>
       <div ref={componentRef}>{gettemplate()}</div>
     </DefaultLayout>

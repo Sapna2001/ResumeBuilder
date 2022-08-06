@@ -33,7 +33,9 @@ function DefaultLayout(props) {
           Resume Builder
         </h1>
         <Dropdown overlay={menu} placement="bottomLeft">
-          <Button className="iconButton" icon={<UserOutlined />}>{user.username}</Button>
+          <Button className="iconButton" icon={<UserOutlined />}>
+            {user.username}
+          </Button>
         </Dropdown>
       </div>
       <div className="content" style={{ overflow: "scroll" }}>

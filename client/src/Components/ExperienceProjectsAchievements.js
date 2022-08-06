@@ -5,8 +5,9 @@ const { TextArea } = Input;
 function ExperienceProjects() {
   return (
     <div>
-
-      <h5><b>Experience</b></h5>
+      <h5>
+        <b>Experience</b>
+      </h5>
       <hr />
       <Form.List name="experience">
         {(fields, { add, remove }) => (
@@ -96,7 +97,9 @@ function ExperienceProjects() {
         )}
       </Form.List>
 
-      <h5><b>Projects</b></h5>
+      <h5>
+        <b>Projects</b>
+      </h5>
       <hr />
       <Form.List name="projects">
         {(fields, { add, remove }) => (
@@ -175,7 +178,9 @@ function ExperienceProjects() {
         )}
       </Form.List>
 
-      <h5><b>Achievements</b></h5>
+      <h5>
+        <b>Achievements</b>
+      </h5>
       <hr />
       <Form.List name="achievements">
         {(fields, { add, remove }) => (

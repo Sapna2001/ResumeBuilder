@@ -14,9 +14,15 @@ function Template2() {
         <div className="top d-flex flex-row justify-content-around">
           <p>{user.email}</p>
           <p>{user.mobileNumber}</p>
-          <a href={user.linkedIn}><p>LinkedIn</p></a>
-          <a href={user.github}><p>Github</p></a>
-          <a href={user.portfolio}><p>Portfolio</p></a>
+          <a href={user.linkedIn}>
+            <p>LinkedIn</p>
+          </a>
+          <a href={user.github}>
+            <p>Github</p>
+          </a>
+          <a href={user.portfolio}>
+            <p>Portfolio</p>
+          </a>
         </div>
       </div>
 

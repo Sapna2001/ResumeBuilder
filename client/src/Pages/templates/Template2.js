@@ -13,9 +13,15 @@ function Template2() {
         <div className="top d-flex flex-row justify-content-around">
           <p>{user.email}</p>
           <p>{user.mobileNumber}</p>
-          <a href={user.linkedIn}><p>LinkedIn</p></a>
-          <a href={user.github}><p>Github</p></a>
-          <a href={user.portfolio}><p>Portfolio</p></a>
+          <a href={user.linkedIn}>
+            <p>LinkedIn</p>
+          </a>
+          <a href={user.github}>
+            <p>Github</p>
+          </a>
+          <a href={user.portfolio}>
+            <p>Portfolio</p>
+          </a>
         </div>
       </div>
 
@@ -72,7 +78,9 @@ function Template2() {
             <div className="d-flex flex-column mt-3">
               <h6>
                 <b className="top d-flex flex-row justify-content-between">
-                <a href={project.link}><p>{project.title}</p></a>
+                  <a href={project.link}>
+                    <p>{project.title}</p>
+                  </a>
                   <p>{project.yearRange}</p>
                 </b>
               </h6>
@@ -88,9 +96,9 @@ function Template2() {
         <h3 className="highlightedHeading">Skills</h3>
 
         <div className="top d-flex flex-row justify-content-between">
-        {user.skills.map((skill) => {
-          return <p>{skill.technology}</p>;
-        })}
+          {user.skills.map((skill) => {
+            return <p>{skill.technology}</p>;
+          })}
         </div>
       </div>
       <div className="divider mt-3"></div>
