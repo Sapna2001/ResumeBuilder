@@ -12,19 +12,19 @@ Resume builder is a application used to create ATS(Applicant Tracking System) fr
 
 # How to use?
 - Register
-<img width="350px" height="400px" src="">
+<img width="800px" height="400px" src="https://github.com/Sapna2001/ResumeBuilder/blob/main/client/src/Resources/Screenshots/register.png">
 
 - Login
-<img width="350px" height="400px" src="">
+<img width="800px" height="400px" src="https://github.com/Sapna2001/ResumeBuilder/blob/main/client/src/Resources/Screenshots/login.png">
 
 - Add details to the profile.
-<img width="350px" height="400px" src="">
+<img width="800px" height="400px" src="https://github.com/Sapna2001/ResumeBuilder/blob/main/client/src/Resources/Screenshots/profile.png">
 
 - Select the desired template from the home page.
-<img width="350px" height="400px" src="">
+<img width="800px" height="400px" src="https://github.com/Sapna2001/ResumeBuilder/blob/main/client/src/Resources/Screenshots/home.png">
 
 - Print the resume
-<img width="350px" height="400px" src="">
+<img width="800px" height="400px" src="https://github.com/Sapna2001/ResumeBuilder/blob/main/client/src/Resources/Screenshots/print.png">
 
 # Template
 The resume builder currently provides 3 templates.
