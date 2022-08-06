@@ -40,7 +40,7 @@ function Profile() {
             <TabPane tab="Personal Info" key="1">
               <PersonalInfo />
             </TabPane>
-            <TabPane tab="Skills and Education" key="2">
+            <TabPane tab="Skills / Education" key="2">
               <SkillsEducation />
             </TabPane>
             <TabPane tab="Experience / Projects / Achievements" key="3">

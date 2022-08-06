@@ -42,6 +42,26 @@ function PersonalInfo() {
         </div>
         <div className="col-md-4">
           <Form.Item
+            name="linkedIn"
+            label="LinkedIn"
+            rules={[{ required: true }]}
+          >
+            <Input />
+          </Form.Item>
+        </div>
+
+        <div className="col-md-4">
+          <Form.Item
+            name="github"
+            label="GitHub"
+            rules={[{ required: true }]}
+          >
+            <Input />
+          </Form.Item>
+        </div>
+
+        <div className="col-md-4">
+          <Form.Item
             name="portfolio"
             label="Portfolio"
             rules={[{ required: true }]}

@@ -1,7 +1,9 @@
 import React from "react";
 import DefaultLayout from "../Components/DefaultLayout";
-import templateimg from "../Resources/templates/template1.png";
-import template2img from "../Resources/templates/template2.png";
+import template1Img from "../Resources/templates/template1.png";
+import template2Img from "../Resources/templates/template2.png";
+import template3Img from "../Resources/templates/template3.png";
+
 import "../Resources/Stylesheets/templates.css";
 import { useNavigate } from "react-router-dom";
 
@@ -10,11 +12,15 @@ function Home() {
   const templates = [
     {
       title: "Simple Resume",
-      image: templateimg,
+      image: template1Img,
     },
     {
       title: "Highlighted Sections Resume",
-      image: template2img,
+      image: template2Img,
+    },
+    {
+      title: "Semi Highlighted Sections Resume",
+      image: template3Img,
     },
   ];
   return (

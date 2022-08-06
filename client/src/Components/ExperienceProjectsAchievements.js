@@ -14,7 +14,7 @@ function ExperienceProjects() {
             <div className="row">
               {fields.map(({ key, name, ...restField }) => (
                 <>
-                  <div className="col-md-3">
+                  <div className="col-md-2">
                     <Form.Item
                       {...restField}
                       name={[name, "company"]}
@@ -29,16 +29,28 @@ function ExperienceProjects() {
                   <div className="col-md-2">
                     <Form.Item
                       {...restField}
-                      name={[name, "years"]}
+                      name={[name, "position"]}
                       rules={[
                         { required: true, message: "Missing first name" },
                       ]}
                     >
-                      <Input placeholder="Years" />
+                      <TextArea placeholder="Position" />
                     </Form.Item>
                   </div>
 
                   <div className="col-md-3">
+                    <Form.Item
+                      {...restField}
+                      name={[name, "description"]}
+                      rules={[
+                        { required: true, message: "Missing first name" },
+                      ]}
+                    >
+                      <TextArea placeholder="Description" />
+                    </Form.Item>
+                  </div>
+
+                  <div className="col-md-1">
                     <Form.Item
                       {...restField}
                       name={[name, "place"]}
@@ -49,10 +61,10 @@ function ExperienceProjects() {
                       <Input placeholder="Place" />
                     </Form.Item>
                   </div>
-                  <div className="col-md-2">
+                  <div className="col-md-1">
                     <Form.Item
                       {...restField}
-                      name={[name, "range"]}
+                      name={[name, "yearRange"]}
                       rules={[
                         { required: true, message: "Missing first name" },
                       ]}
@@ -92,7 +104,7 @@ function ExperienceProjects() {
             <div className="row">
               {fields.map(({ key, name, ...restField }) => (
                 <>
-                  <div className="col-md-4">
+                  <div className="col-md-2">
                     <Form.Item
                       {...restField}
                       name={[name, "title"]}
@@ -101,6 +113,18 @@ function ExperienceProjects() {
                       ]}
                     >
                       <Input placeholder="Title" />
+                    </Form.Item>
+                  </div>
+
+                  <div className="col-md-2">
+                    <Form.Item
+                      {...restField}
+                      name={[name, "link"]}
+                      rules={[
+                        { required: true, message: "Missing first name" },
+                      ]}
+                    >
+                      <Input placeholder="Project Link" />
                     </Form.Item>
                   </div>
 
@@ -118,7 +142,7 @@ function ExperienceProjects() {
                   <div className="col-md-2">
                     <Form.Item
                       {...restField}
-                      name={[name, "range"]}
+                      name={[name, "yearRange"]}
                       rules={[
                         { required: true, message: "Missing first name" },
                       ]}
@@ -186,7 +210,7 @@ function ExperienceProjects() {
                   <div className="col-md-2">
                     <Form.Item
                       {...restField}
-                      name={[name, "range"]}
+                      name={[name, "yearRange"]}
                       rules={[
                         { required: true, message: "Missing first name" },
                       ]}

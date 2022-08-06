@@ -4,6 +4,7 @@ import { Navigate, useNavigate, useParams } from "react-router-dom";
 import DefaultLayout from "../../Components/DefaultLayout";
 import Template1 from "./Template1";
 import Template2 from "./Template2";
+import Template3 from "./Template3";
 import { Button } from "antd";
 import "../../Resources/Stylesheets/templates.css";
 
@@ -21,6 +22,9 @@ function Templates() {
       }
       case "2": {
         return <Template2 />;
+      }
+      case "3": {
+        return <Template3 />;
       }
     }
   };

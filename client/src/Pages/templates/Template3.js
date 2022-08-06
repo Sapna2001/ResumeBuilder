@@ -1,5 +1,6 @@
 import React from "react";
 import "../../Resources/Stylesheets/templates.css";
+
 function Template2() {
   const user = JSON.parse(localStorage.getItem("resume-user"));
   return (
@@ -22,7 +23,7 @@ function Template2() {
       <div className="divider mt-3"></div>
 
       <div className="education mt-3">
-        <h3 className="highlightedHeading">Education</h3>
+        <h3 className="semiHighlightedHeading">Education</h3>
 
         {user.education.map((education) => {
           return (
@@ -42,7 +43,7 @@ function Template2() {
       <div className="divider mt-3"></div>
 
       <div className="experience mt-3">
-        <h3 className="highlightedHeading">Experience</h3>
+        <h3 className="semiHighlightedHeading">Experience</h3>
 
         {user.experience.map((experience) => {
           return (
@@ -65,14 +66,16 @@ function Template2() {
       <div className="divider mt-3"></div>
 
       <div className="projects mt-3">
-        <h3 className="highlightedHeading">Projects</h3>
+        <h3 className="semiHighlightedHeading">Projects</h3>
 
         {user.projects.map((project) => {
           return (
             <div className="d-flex flex-column mt-3">
               <h6>
                 <b className="top d-flex flex-row justify-content-between">
-                <a href={project.link}><p>{project.title}</p></a>
+                  <a href={project.link}>
+                    <p>{project.title}</p>
+                  </a>
                   <p>{project.yearRange}</p>
                 </b>
               </h6>
@@ -85,18 +88,18 @@ function Template2() {
       <div className="divider mt-3"></div>
 
       <div className="skills mt-3">
-        <h3 className="highlightedHeading">Skills</h3>
-
+        <h3 className="semiHighlightedHeading">Skills</h3>
         <div className="top d-flex flex-row justify-content-between">
-        {user.skills.map((skill) => {
-          return <p>{skill.technology}</p>;
-        })}
+          {user.skills.map((skill) => {
+            return <p>{skill.technology}</p>;
+          })}
         </div>
       </div>
+
       <div className="divider mt-3"></div>
 
       <div className="achievements mt-3">
-        <h3 className="highlightedHeading">Achievements</h3>
+        <h3 className="semiHighlightedHeading">Achievements</h3>
 
         {user.achievements.map((achievement) => {
           return (

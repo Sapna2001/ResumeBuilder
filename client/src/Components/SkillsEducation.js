@@ -41,10 +41,11 @@ function SkillsEducation() {
                     <Input placeholder="Institution" />
                   </Form.Item>
                   </div>
+
                   <div className="col-md-2">
                   <Form.Item
                     {...restField}
-                    name={[name, "range"]}
+                    name={[name, "yearRange"]}
                     rules={[{ required: true, message: "Missing first name" }]}
                   >
                     <Input placeholder="Year Range" />
