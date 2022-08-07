@@ -3,7 +3,7 @@ const dotenv = require("dotenv");
 
 dotenv.config({ path: "./config.env" });
 
-const URL = process.env.DATABASE;
+const URL = 'mongodb+srv://ResumeBuilder:resumebuildersapna1%40@cluster0.w9z3g.mongodb.net/resume-builder'
 
 mongoose.connect(URL, {
   useUnifiedTopology: true,
