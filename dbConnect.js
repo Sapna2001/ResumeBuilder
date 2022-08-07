@@ -1,15 +1,21 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
+const dotenv = require("dotenv");
 
-const URL = 'mongodb+srv://ResumeBuilder:resumebuildersapna1%40@cluster0.w9z3g.mongodb.net/resume-builder'
+dotenv.config({ path: "./config.env" });
 
-mongoose.connect(URL , {useUnifiedTopology:true , useNewUrlParser:true})
+const URL = process.env.DATABASE;
 
-const connection = mongoose.connection
+mongoose.connect(URL, {
+  useUnifiedTopology: true,
+  useNewUrlParser: true,
+});
 
-connection.on('connected' , ()=>{
-    console.log('Mongo DB Connection Successfull')
-})
-connection.on('error' , (error)=>{
-    console.log(error)
-})
+const connection = mongoose.connection;
 
+connection.on("connected", () => {
+  console.log("Mongo DB Connection Successfull");
+});
+
+connection.on("error", (error) => {
+  console.log(error);
+});
