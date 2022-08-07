@@ -2,42 +2,41 @@ const express = require("express");
 const User = require("../models/userModel");
 const app = express.Router();
 
-// Create endpoints
-app.post("/login", async (request, response) => {
+app.post("/login", async (req, res) => {
   try {
     const result = await User.findOne({
-      username: request.body.username,
-      password: request.body.password,
+      username: req.body.username,
+      password: req.body.password,
     });
 
     if (result) {
-      response.send(result);
+      res.send(result);
     } else {
-      response.status(400).json("Login failed");
+      res.status(400).json("Login failed");
     }
   } catch (error) {
-    response.status(400).json(error);
+    res.status(400).json(error);
   }
 });
 
-app.post("/register", async (request, response) => {
+app.post("/register", async (req, res) => {
   try {
-    const newUser = new User(request.body);
-    await newUser.save();
+    const newuser = new User(req.body);
+    await newuser.save();
 
-    response.send("Registration Successfull");
+    res.send("Registration Successfull");
   } catch (error) {
-    response.status(400).json(error);
+    res.status(400).json(error);
   }
 });
 
-app.post("/update", async (request, response) => {
+app.post("/update", async (req, res) => {
   try {
-    await User.findOneAndUpdate({ _id: request.body._id }, request.body);
-    const user = await User.findOne({ _id: request.body._id });
-    response.send(user);
+    await User.findOneAndUpdate({ _id: req.body._id }, req.body);
+    const user = await User.findOne({ _id: req.body._id });
+    res.send(user);
   } catch (error) {
-    response.status(400).json(error);
+    res.status(400).json(error);
   }
 });
 
