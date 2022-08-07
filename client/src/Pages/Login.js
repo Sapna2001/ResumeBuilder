@@ -18,7 +18,6 @@ function Register() {
       navigate("/home");
     } catch (error) {
       setLoading(false);
-      console.log(error);
       message.error("Login failed");
     }
   };
