@@ -5,7 +5,7 @@ import "./../Resources/Stylesheets/defaultlayout.css";
 import { UserOutlined } from "@ant-design/icons";
 
 function DefaultLayout(props) {
-  const user = JSON.parse(localStorage.getItem("resume-user"));
+  const user = JSON.parse(localStorage.getItem("resumeUser"));
   const navigate = useNavigate();
   const menu = (
     <Menu>
@@ -18,7 +18,7 @@ function DefaultLayout(props) {
       <Menu.Item
         // To logout
         onClick={() => {
-          localStorage.removeItem("resume-user");
+          localStorage.removeItem("resumeUser");
           navigate("/login");
         }}
       >

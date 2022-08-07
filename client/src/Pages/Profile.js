@@ -11,7 +11,7 @@ const { TabPane } = Tabs;
 
 function Profile() {
   const [loading, setLoading] = useState(false);
-  const user = JSON.parse(localStorage.getItem("resume-user"));
+  const user = JSON.parse(localStorage.getItem("resumeUser"));
   const onFinish = async (values) => {
     setLoading(true);
     try {
@@ -19,7 +19,7 @@ function Profile() {
         ...values,
         _id: user._id,
       });
-      localStorage.setItem("resume-user", JSON.stringify(result.data));
+      localStorage.setItem("resumeUser", JSON.stringify(result.data));
       setLoading(false);
       message.success("Profile updated successfully");
     } catch (error) {

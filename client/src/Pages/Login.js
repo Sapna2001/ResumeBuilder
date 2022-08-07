@@ -13,7 +13,7 @@ function Register() {
     try {
       const user = await axios.post("api/user/login", values);
       message.success("Login successfull");
-      localStorage.setItem("resume-user", JSON.stringify(user.data));
+      localStorage.setItem("resumeUser", JSON.stringify(user.data));
       setLoading(false);
       navigate("/home");
     } catch (error) {
@@ -24,7 +24,7 @@ function Register() {
   };
 
   useEffect(() => {
-    if (localStorage.getItem("resume-user")) {
+    if (localStorage.getItem("resumeUser")) {
       navigate("/home");
     }
   });

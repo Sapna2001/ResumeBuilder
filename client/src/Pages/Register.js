@@ -23,7 +23,7 @@ function Register() {
   };
 
   useEffect(() => {
-    if (localStorage.getItem("resume-user")) {
+    if (localStorage.getItem("resumeUser")) {
       navigate("/home");
     }
   });

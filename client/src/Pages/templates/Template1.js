@@ -1,7 +1,7 @@
 import React from "react";
 import "../../Resources/Stylesheets/templates.css";
 function Template1() {
-  const user = JSON.parse(localStorage.getItem("resume-user"));
+  const user = JSON.parse(localStorage.getItem("resumeUser"));
   return (
     <div className="templateParent">
       <div className="top d-flex flex-column">
@@ -31,7 +31,6 @@ function Template1() {
         <h3>Education</h3>
 
         {user.education.map((education) => {
-          console.log(education);
           return (
             <div className="d-flex align-items-center">
               <h6 style={{ width: 120 }}>

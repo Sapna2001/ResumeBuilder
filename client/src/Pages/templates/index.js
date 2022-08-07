@@ -15,7 +15,7 @@ function Templates() {
   });
   const params = useParams();
   const navigate = useNavigate();
-  const gettemplate = () => {
+  const getTemplate = () => {
     switch (params.id) {
       case "1": {
         return <Template1 />;
@@ -41,7 +41,7 @@ function Templates() {
           Print
         </Button>
       </div>
-      <div ref={componentRef}>{gettemplate()}</div>
+      <div ref={componentRef}>{getTemplate()}</div>
     </DefaultLayout>
   );
 }

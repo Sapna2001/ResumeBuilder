@@ -54,7 +54,7 @@ function App() {
 export default App;
 
 export function ProtectedRoute(props) {
-  if (localStorage.getItem("resume-user")) {
+  if (localStorage.getItem("resumeUser")) {
     return props.children;
   } else {
     return <Navigate to="/login" />;

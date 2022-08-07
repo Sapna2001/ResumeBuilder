@@ -1,7 +1,7 @@
 import React from "react";
 import "../../Resources/Stylesheets/templates.css";
 function Template2() {
-  const user = JSON.parse(localStorage.getItem("resume-user"));
+  const user = JSON.parse(localStorage.getItem("resumeUser"));
   return (
     <div className="templateParent">
       <div className="top d-flex flex-column">
