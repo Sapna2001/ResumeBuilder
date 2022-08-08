@@ -27,7 +27,6 @@ app.post("/register", async (request, response) => {
     });
 
     if (result) {
-      console.log("user exists");
       response.status(400).json("Registration failed");
     } else {
       if (request.body.password == request.body.confirmPassword) {

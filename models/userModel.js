@@ -17,6 +17,7 @@ const userSchema = new mongoose.Schema(
     experience: { type: Array, default: [] },
     projects: { type: Array, default: [] },
     achievements: { type: Array, default: [] },
+    address: { type: String, default: "" },
   },
   {
     // Mongoose adds two properties of type Date to the schema:
