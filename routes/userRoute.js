@@ -22,10 +22,23 @@ app.post("/login", async (request, response) => {
 
 app.post("/register", async (request, response) => {
   try {
-    const newUser = new User(request.body);
-    await newUser.save();
+    const result = await User.findOne({
+      username: request.body.username,
+    });
 
-    response.send("Registration Successfull");
+    if (result) {
+      console.log("user exists");
+      response.status(400).json("Registration failed");
+    } else {
+      if (request.body.password == request.body.confirmPassword) {
+        const newUser = new User(request.body);
+        await newUser.save();
+
+        response.send("Registration Successfull");
+      } else {
+        response.status(400).json("Registration failed");
+      }
+    }
   } catch (error) {
     response.status(400).json(error);
   }
