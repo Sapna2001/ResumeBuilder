@@ -33,7 +33,7 @@ function Home() {
                 <img
                   src={template.image}
                   height="400"
-                  alt=""
+                  alt="resumeTemplate"
                   style={{ width: "100%" }}
                 />
                 <div className="text">
